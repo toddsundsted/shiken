@@ -1,0 +1,25 @@
+The goal is to get the application to run in a browser and to capture
+a screenshot of the home page as it appears in the browser.
+
+There are three branches: `master`, `add_geocoding`, and
+`connect_users_and_places`.  You should first *rebase* the
+`add_geocoding` branch on top of the `master` branch, and then
+fast-forward merge the rebased branch with `master`.  Do *not* simply
+merge `add_geocoding` and `master`.  Fix any conflicts.  Then you
+should rebase the `connect_users_and_places` branch on top of the new
+`master` branch, and then fast-forward merge the rebased branch with
+`master`.  Again, fix any conflicts.
+
+Once the merges are complete, you need to add a migration to the
+project that adds a string attribute called "name" to the `User`
+model.  Add this migration, and any other code changes to the `master`
+branch.
+
+There may be bugs in the code.  Fix any bugs you find.
+
+To complete the task, push the `master` branch to GitHub, run the
+application, and capture a screenshot of the home page.  Send me the
+screenshot.
+
+$ git push origin master
+$ ./script/server
